@@ -1,0 +1,18 @@
+{
+  "name": "FreshStep Laundry, Garment & Shoe Care",
+  "short_name": "FreshStep",
+  "description": "Cleaning Made Effortless. Laundry, garment and shoe care in Entebbe and Kampala.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f8f3",
+  "theme_color": "#1763ae",
+  "icons": [
+    {
+      "src": "./assets/freshstep-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+.iconic-mark {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.iconic-mark .icon-outline {
+  fill: none;
+  stroke: #1763ae;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.5;
+}
+
+.iconic-mark .icon-blue {
+  fill: #1763ae;
+}
+
+.iconic-mark .icon-green {
+  fill: #4a9b69;
+}
+
+.iconic-mark .icon-soft {
+  fill: #dceffa;
+}
+
+.iconic-mark .icon-mint {
+  fill: #dcf2e1;
+}
+
+.customer-illustration .iconic-mark {
+  width: 54px;
+  height: 54px;
+  filter: drop-shadow(0 5px 5px #1763ae20);
+}
+
+.customer-illustration::after {
+  content: "✦";
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  color: #4a9b69;
+  font-size: 15px;
+  animation: freshstep-twinkle 3s ease-in-out infinite;
+}
+
+.customer-illustration {
+  position: relative;
+}
+
+.service-icon .iconic-mark {
+  width: 35px;
+  height: 35px;
+}
+
+.detail-art-symbol .iconic-mark {
+  width: 54px;
+  height: 54px;
+}
+
+.detail-art-symbol {
+  animation: freshstep-float 4s ease-in-out infinite;
+}
+
+.iconic-sparkle {
+  display: inline-block;
+  color: #55a873;
+  animation: freshstep-twinkle 2.8s ease-in-out infinite;
+}
+
+@keyframes freshstep-twinkle {
+  0%, 100% { opacity: .7; transform: scale(.9) rotate(-8deg); }
+  50% { opacity: 1; transform: scale(1.15) rotate(12deg); }
+}
+
+@keyframes freshstep-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .customer-illustration::after,
+  .detail-art-symbol,
+  .iconic-sparkle {
+    animation: none;
+  }
+}

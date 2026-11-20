@@ -1,0 +1,30 @@
+.gallery-grid {
+  grid-auto-rows: 220px;
+}
+
+.gallery-grid figure:first-child {
+  grid-row: span 2;
+}
+
+.gallery-grid figure:nth-child(n + 2) {
+  grid-row: auto;
+}
+
+.gallery-grid img {
+  display: block;
+}
+
+.gallery-grid figcaption {
+  min-height: 82px;
+}
+
+@media (max-width: 800px) {
+  .gallery-grid {
+    grid-auto-rows: 220px;
+  }
+
+  .gallery-grid figure:first-child {
+    grid-row: auto;
+    height: 330px;
+  }
+}
